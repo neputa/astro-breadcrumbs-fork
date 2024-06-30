@@ -101,7 +101,7 @@ const isLastElement = (index: number, array: any[]) =>
                   {Astro.slots.has("index") && index === 0 ? (
                     <slot name="index" slot="index" />
                   ) : (
-                    text
+                    decodeURI(text)
                   )}
                 </BreadcrumbLink>
 
